@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import FAQ from "./FAQ";
+import { cn } from "@/lib/utils";
 
 export default async function HomePage() {
   return (
