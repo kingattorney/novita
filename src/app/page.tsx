@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { FAQ } from "./FAQ";
+import FAQ from "./FAQ";
 
-export default function HomePage() {
+export default async function HomePage() {
   return (
     <main className="container py-10">
       <h1 className="text-4xl font-bold text-center">
@@ -35,6 +35,13 @@ export default function HomePage() {
       <div className="text-center py-32">
         <Button>Đăng ký tham gia sử dụng &quot;Lò không khói&quot;</Button>
       </div>
+      <footer
+        className={cn(
+          "flex justify-center items-center h-12 bg-gray-100 text-gray-500"
+        )}
+      >
+        <p>© {new Date().getFullYear()} Novita Group</p>
+      </footer>
     </main>
   );
 }

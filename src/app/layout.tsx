@@ -27,13 +27,6 @@ export default function RootLayout({
         )}
       >
         {children}
-        <footer
-          className={cn(
-            "flex justify-center items-center h-12 bg-gray-100 text-gray-500"
-          )}
-        >
-          <p>© {new Date().getFullYear()} Novita Group</p>
-        </footer>
       </body>
     </html>
   );
