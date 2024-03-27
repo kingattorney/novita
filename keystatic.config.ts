@@ -2,7 +2,8 @@ import { config, fields, collection } from "@keystatic/core";
 
 export default config({
   storage: {
-    kind: "local",
+    kind: "github",
+    repo: "kingattorney/novita",
   },
   collections: {
     faq: collection({
@@ -41,5 +42,10 @@ export default config({
         }),
       },
     }),
+  },
+  ui: {
+    brand: {
+      name: "Novita Group",
+    },
   },
 });
