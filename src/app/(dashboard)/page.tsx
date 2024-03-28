@@ -1,14 +1,17 @@
 import { Button } from "@/components/ui/button";
 import FAQ from "./FAQ";
-import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 export default async function HomePage() {
   return (
     <main>
       <div className="container py-10">
         <h1 className="text-4xl font-bold text-center">
-          Triển khai sản phẩm &quot;Lò không khói của tiến sỹ Paul&quot;
+          Dự án Cù lao An Bình chứng ngộ
         </h1>
+        <h2 className="text-2xl mt-3 font-bold text-center">
+          Triển khai sản phẩm &quot;Lò không khói của tiến sỹ Paul&quot;
+        </h2>
         <div className="py-10 flex gap-5 items-center">
           <picture>
             <img
@@ -35,16 +38,13 @@ export default async function HomePage() {
         </div>
         <FAQ />
         <div className="text-center py-32">
-          <Button>Đăng ký tham gia sử dụng &quot;Lò không khói&quot;</Button>
+          <Button asChild>
+            <Link href="https://forms.gle/oX4NmPLxzYMVv2Lo9" target="blank">
+              Đăng ký tham gia sử dụng &quot;Lò không khói&quot;
+            </Link>
+          </Button>
         </div>
       </div>
-      <footer
-        className={cn(
-          "flex justify-center items-center h-12 bg-gray-100 text-gray-500"
-        )}
-      >
-        <p>© {new Date().getFullYear()} Novita Group</p>
-      </footer>
     </main>
   );
 }
