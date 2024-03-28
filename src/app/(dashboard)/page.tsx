@@ -11,7 +11,7 @@ export default async function HomePage() {
           Dự án Cù Lao An Bình chứng ngộ
         </h1>
         <h2 className="text-2xl mt-3 font-bold text-center">
-          Triển khai sản phẩm &quot;Lò không khói của tiến sỹ Paul&quot;
+          Triển khai sản phẩm &quot;Lò không khói của Tiến sỹ Paul&quot;
         </h2>
         <Hero />
         <FAQ />

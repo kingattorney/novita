@@ -10,7 +10,7 @@ const fontSans = FontSans({
 
 export const metadata: Metadata = {
   title: "Dự án Cù Lao An Bình chứng ngộ",
-  description: 'Triển khai sản phẩm "Lò không khói của tiến sỹ Paul"',
+  description: 'Triển khai sản phẩm "Lò không khói của Tiến sỹ Paul"',
 };
 
 export default function RootLayout({
