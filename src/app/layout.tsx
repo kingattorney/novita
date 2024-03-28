@@ -9,7 +9,7 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "Dự án Cù Lao An Bình chứng ngộ",
+  title: "Dự án Cù Lao An Bình Chứng Ngộ",
   description: 'Triển khai sản phẩm "Lò không khói của Tiến sỹ Paul"',
 };
 

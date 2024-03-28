@@ -8,7 +8,7 @@ export default async function HomePage() {
     <main>
       <div className="container py-10">
         <h1 className="text-4xl font-bold text-center">
-          Dự án Cù Lao An Bình chứng ngộ
+          Dự án Cù Lao An Bình Chứng Ngộ
         </h1>
         <h2 className="text-2xl mt-3 font-bold text-center">
           Triển khai sản phẩm &quot;Lò không khói của Tiến sỹ Paul&quot;
