@@ -7,7 +7,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       {children}
       <footer>
         <div className="container py-5 flex-col flex justify-center items-center">
-          <p className="font-bold text-xl">Liên hệ</p>
+          <p className="font-bold text-xl">Thông tin liên hệ</p>
           <ul>
             <li>
               <b>Địa chỉ: </b>
