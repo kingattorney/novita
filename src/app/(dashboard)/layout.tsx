@@ -10,16 +10,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <p className="font-bold text-xl">Liên hệ</p>
           <ul>
             <li>
-              <b>Địa chỉ: </b>
-              tầng 4, Tòa nhà Lam Giang, 167-173 Trần Hưng Đạo, Phường Cô Giang,
-              Quận 1, Tp.Hồ Chí Minh
-            </li>
-            <li>
               <b>SĐT: </b> 1900 8666 47 - 0963 718 946
             </li>
             <li>
               <b>Email: </b>
-              csh@kingattorney.com.vn
+              Info@novitagroup.vn
             </li>
           </ul>
         </div>
