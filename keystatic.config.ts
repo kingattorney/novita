@@ -2,9 +2,8 @@ import { config, fields, collection, singleton } from "@keystatic/core";
 
 export default config({
   storage: {
-    // kind: "github",
-    // repo: "kingattorney/novita",
-    kind: "local",
+    kind: "github",
+    repo: "kingattorney/novita",
   },
   collections: {
     faq: collection({
@@ -51,6 +50,7 @@ export default config({
       schema: {
         thungo: fields.document({
           label: "Thư ngỏ",
+
           formatting: true,
           dividers: true,
           links: true,
