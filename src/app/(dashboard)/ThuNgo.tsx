@@ -28,12 +28,12 @@ export default async function ThuNgo() {
             An Bình 
             <br />
             10:30am of 03 March 24
-          </p>
-          <p>
+            <br />
             TS. LS Đỗ Hữu Chiến 
             <br />
             (JD Martin Do)
           </p>
+          <p></p>
         </div>
       </div>
     </div>
