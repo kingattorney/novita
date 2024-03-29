@@ -34,7 +34,7 @@ export default async function FAQ({ limit = true }: { limit?: boolean }) {
           <Accordion type="single" collapsible>
             {faqs.slice(0, limit ? 5 : faqs.length).map(async (faq) => (
               <AccordionItem value={faq.slug} key={faq.slug}>
-                <AccordionTrigger className="text-left">
+                <AccordionTrigger className="text-left faq-button">
                   {faq.entry.question}
                 </AccordionTrigger>
                 <AccordionContent>
