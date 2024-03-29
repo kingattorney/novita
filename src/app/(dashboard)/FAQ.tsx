@@ -11,6 +11,7 @@ import { DocumentRenderer } from "@keystatic/core/renderer";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { sendGTMEvent } from "@next/third-parties/google";
+import DangKy from "./DangKy";
 const reader = createReader(process.cwd(), keystaticConfig);
 
 export default async function FAQ({ limit = true }: { limit?: boolean }) {
@@ -49,21 +50,7 @@ export default async function FAQ({ limit = true }: { limit?: boolean }) {
           )}
         </div>
         <div className="flex justify-center items-center mt-10">
-          <Button
-            asChild
-            size="lg"
-            className="bg-[#71AE0F] text-lg md:text-xl font-itim"
-            onClick={() =>
-              sendGTMEvent({
-                event: "buttonClicked",
-                value: "register_form_click",
-              })
-            }
-          >
-            <Link href="https://forms.gle/oX4NmPLxzYMVv2Lo9" target="blank">
-              Đăng ký tham gia sử dụng &quot;Lò không khói&quot;
-            </Link>
-          </Button>
+          <DangKy />
         </div>
       </div>
     </div>
