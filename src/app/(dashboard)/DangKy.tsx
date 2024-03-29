@@ -9,7 +9,7 @@ export default function DangKy() {
     <Button
       asChild
       size="lg"
-      className="bg-[#71AE0F] text-lg md:text-xl font-itim"
+      className="bg-[#71AE0F] text-lg md:text-xl font-itim whitespace-normal text-center h-auto py-4"
     >
       <Link
         href="https://forms.gle/oX4NmPLxzYMVv2Lo9"

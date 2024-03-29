@@ -57,7 +57,7 @@ export default async function FAQ({ limit = true }: { limit?: boolean }) {
             ))}
           </Accordion>
           {limit && (
-            <Button className="mt-10 mx-auto" variant="outline" asChild>
+            <Button className="mt-10 mx-auto " variant="outline" asChild>
               <Link href="/faq">Xem thêm</Link>
             </Button>
           )}
