@@ -13,7 +13,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <img src="logo.svg" alt="" />
             </picture>
           </Link>
-          <p>Hotline: 0963 718 946</p>
+          <a href="tel:0963718946">Hotline: 0963 718 946</a>
         </div>
       </header>
       {children}
