@@ -1,17 +1,28 @@
 import { config, fields, collection, singleton } from "@keystatic/core";
 
 export default config({
-  storage: {
-    kind: "github",
-    repo: "kingattorney/novita",
-  },
+  storage:
+    process.env.NODE_ENV === "production"
+      ? {
+          kind: "github",
+          repo: "kingattorney/novita",
+        }
+      : {
+          kind: "local",
+        },
   collections: {
     faq: collection({
       label: "FAQ",
       path: "content/faq/*",
       slugField: "question",
       parseSlugForSort(slug) {
-        return slug.replace(/-/g, " ");
+        // match hoi-number-slug
+        // compare based on number
+        const match = slug.match(/hoi-(\d+)-/);
+        if (match) {
+          return parseInt(match[1], 10);
+        }
+        return slug;
       },
       schema: {
         question: fields.slug({

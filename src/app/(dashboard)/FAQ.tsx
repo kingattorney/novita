@@ -15,7 +15,16 @@ import DangKy from "./DangKy";
 const reader = createReader(process.cwd(), keystaticConfig);
 
 export default async function FAQ({ limit = true }: { limit?: boolean }) {
-  const faqs = await await reader.collections.faq.all();
+  const faqs = await await (
+    await reader.collections.faq.all()
+  ).sort((a, b) => {
+    const matchA = a.slug.match(/hoi-(\d+)-/);
+    const matchB = b.slug.match(/hoi-(\d+)-/);
+    if (matchA && matchB) {
+      return parseInt(matchA[1], 10) - parseInt(matchB[1], 10);
+    }
+    return 0;
+  });
 
   return (
     <div
@@ -33,8 +42,12 @@ export default async function FAQ({ limit = true }: { limit?: boolean }) {
         <div className="bg-white flex flex-col p-5 rounded-xl border border-[#71AE0F]">
           <Accordion type="single" collapsible>
             {faqs.slice(0, limit ? 5 : faqs.length).map(async (faq) => (
-              <AccordionItem value={faq.slug} key={faq.slug}>
-                <AccordionTrigger className="text-left faq-button">
+              <AccordionItem
+                value={faq.slug}
+                key={faq.slug}
+                className="prose max-w-none prose-h3:m-0"
+              >
+                <AccordionTrigger className="text-left faq-button py-7">
                   {faq.entry.question}
                 </AccordionTrigger>
                 <AccordionContent>
