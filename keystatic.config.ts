@@ -2,8 +2,9 @@ import { config, fields, collection, singleton } from "@keystatic/core";
 
 export default config({
   storage: {
-    kind: "github",
-    repo: "kingattorney/novita",
+    // kind: "github",
+    // repo: "kingattorney/novita",
+    kind: "local",
   },
   collections: {
     faq: collection({
@@ -25,6 +26,31 @@ export default config({
         }),
         answer: fields.document({
           label: "Answer",
+          formatting: true,
+          dividers: true,
+          links: true,
+          images: {
+            directory: "public/site/images",
+            publicPath: "/site/images",
+            schema: {
+              title: fields.text({
+                label: "Caption",
+                description:
+                  "The text to display under the image in a caption.",
+              }),
+            },
+          },
+        }),
+      },
+    }),
+  },
+  singletons: {
+    homepage: singleton({
+      label: "Homepage",
+      path: "content/homepage/",
+      schema: {
+        thungo: fields.document({
+          label: "Thư ngỏ",
           formatting: true,
           dividers: true,
           links: true,

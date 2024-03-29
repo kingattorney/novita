@@ -1,7 +1,6 @@
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
 import FAQ from "./FAQ";
 import Hero from "./Hero";
+import ThuNgo from "./ThuNgo";
 
 export default async function HomePage() {
   return (
@@ -23,6 +22,7 @@ export default async function HomePage() {
         </h2>
       </div>
       <Hero />
+      <ThuNgo />
       <FAQ />
     </main>
   );
