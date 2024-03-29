@@ -10,12 +10,6 @@ export default function DangKy() {
       asChild
       size="lg"
       className="bg-[#71AE0F] text-lg md:text-xl font-itim"
-      onClick={() =>
-        sendGTMEvent({
-          event: "buttonClicked",
-          value: "register_form_click",
-        })
-      }
     >
       <Link href="https://forms.gle/oX4NmPLxzYMVv2Lo9" target="blank">
         Đăng ký tham gia sử dụng &quot;Lò không khói&quot;
