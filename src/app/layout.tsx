@@ -3,6 +3,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import type { Metadata } from "next";
 import { Inter as FontSans, Itim } from "next/font/google";
 import "./globals.css";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -34,6 +35,7 @@ export default function RootLayout({
       >
         {children}
         <GoogleAnalytics gaId="G-R0LWKVRG10" />
+        <GoogleTagManager gtmId="GTM-5R8KVQ2N" />
       </body>
     </html>
   );
