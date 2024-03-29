@@ -33,9 +33,9 @@ export default function RootLayout({
           fontItim.variable
         )}
       >
+        <GoogleTagManager gtmId="GTM-5R8KVQ2N" />
         {children}
         <GoogleAnalytics gaId="G-R0LWKVRG10" />
-        <GoogleTagManager gtmId="GTM-5R8KVQ2N" />
       </body>
     </html>
   );
