@@ -2,17 +2,23 @@ import React from "react";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
+import LocaleSwitcher from "./LocaleSwitcher";
+
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div>
       <header>
         <div className="h-8 bg-[#75AD1A]"></div>
-        <div className="container flex-wrap py-4 flex justify-between text-[#42A761] text-xl font-bold items-center">
-          <Link href="/">
-            <picture>
-              <img src="logo.svg" alt="" />
-            </picture>
-          </Link>
+        <div className="container flex-wrap py-4 flex gap-5  justify-between text-[#42A761] text-xl font-bold items-center">
+          <div className="flex gap-3 items-center flex-1  justify-between ">
+            <Link href="/">
+              <picture>
+                <img src="logo.svg" alt="" />
+              </picture>
+            </Link>
+            <LocaleSwitcher />
+          </div>
+
           <a href="tel:0963718946">Hotline: 0963 718 946</a>
         </div>
       </header>

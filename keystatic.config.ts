@@ -25,6 +25,25 @@ export default config({
         return slug;
       },
       schema: {
+        locale: fields.select({
+          label: "Locale",
+          description: "The language of the document.",
+          options: [
+            {
+              label: "Tiếng Việt",
+              value: "vi",
+            },
+            {
+              label: "English",
+              value: "en",
+            },
+            {
+              label: "中文",
+              value: "zh",
+            },
+          ],
+          defaultValue: "vi",
+        }),
         question: fields.slug({
           name: {
             label: "Question",
