@@ -74,6 +74,7 @@ const config = {
       },
       fontFamily: {
         itim: ["var(--font-itim)", "sans-serif"],
+        inter: ["var(--font-inter), sans-serif"],
       },
     },
   },
