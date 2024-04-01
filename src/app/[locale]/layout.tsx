@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import type { Metadata } from "next";
 import { Inter as FontSans, Itim } from "next/font/google";
+import { I18nProviderClient } from "../../../locales/client";
 import "./globals.css";
 
 const fontSans = FontSans({
@@ -35,7 +36,7 @@ export default function RootLayout({
         )}
       >
         <GoogleTagManager gtmId="GTM-5R8KVQ2N" />
-        {children}
+        <I18nProviderClient locale={locale}>{children}</I18nProviderClient>
         <GoogleAnalytics gaId="G-R0LWKVRG10" />
       </body>
     </html>

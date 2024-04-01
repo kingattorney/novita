@@ -1,5 +1,5 @@
 import { createReader } from "@keystatic/core/reader";
-import keystaticConfig from "../../../keystatic.config";
+import keystaticConfig from "../../../../keystatic.config";
 
 import {
   Accordion,
@@ -7,14 +7,15 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { DocumentRenderer } from "@keystatic/core/renderer";
 import { Button } from "@/components/ui/button";
+import { DocumentRenderer } from "@keystatic/core/renderer";
 import Link from "next/link";
-import { sendGTMEvent } from "@next/third-parties/google";
 import DangKy from "./DangKy";
+import { getCurrentLocale } from "../../../../locales/server";
 const reader = createReader(process.cwd(), keystaticConfig);
 
 export default async function FAQ({ limit = true }: { limit?: boolean }) {
+  const locale = getCurrentLocale();
   const faqs = await await (
     await reader.collections.faq.all()
   ).sort((a, b) => {
@@ -41,20 +42,23 @@ export default async function FAQ({ limit = true }: { limit?: boolean }) {
       <div className="container mt-10">
         <div className="bg-white flex flex-col p-5 rounded-xl border border-[#71AE0F]">
           <Accordion type="multiple">
-            {faqs.slice(0, limit ? 5 : faqs.length).map(async (faq) => (
-              <AccordionItem
-                value={faq.slug}
-                key={faq.slug}
-                className="prose max-w-none prose-h3:m-0"
-              >
-                <AccordionTrigger className="text-left faq-button py-7">
-                  {faq.entry.question}
-                </AccordionTrigger>
-                <AccordionContent>
-                  <DocumentRenderer document={await faq.entry.answer()} />
-                </AccordionContent>
-              </AccordionItem>
-            ))}
+            {faqs
+              .filter((faq) => faq.entry.locale == locale)
+              .slice(0, limit ? 5 : faqs.length)
+              .map(async (faq) => (
+                <AccordionItem
+                  value={faq.slug}
+                  key={faq.slug}
+                  className="prose max-w-none prose-h3:m-0"
+                >
+                  <AccordionTrigger className="text-left faq-button py-7">
+                    {faq.entry.question}
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <DocumentRenderer document={await faq.entry.answer()} />
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
           </Accordion>
           {limit && (
             <Button className="mt-10 mx-auto " variant="outline" asChild>
