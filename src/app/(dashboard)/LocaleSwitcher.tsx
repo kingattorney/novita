@@ -7,19 +7,15 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { useChangeLocale, useCurrentLocale } from "../../../../locales/client";
 
 export default function LocaleSwitcher() {
-  const changeLocale = useChangeLocale();
-  const locale = useCurrentLocale();
-
   return (
     <div>
       <Select
-        value={locale}
-        onValueChange={(value) => {
-          changeLocale(value as any);
-        }}
+      // value={locale}
+      // onValueChange={(value) => {
+      //   changeLocale(value as any);
+      // }}
       >
         <SelectTrigger>
           <SelectValue placeholder="Language" />
