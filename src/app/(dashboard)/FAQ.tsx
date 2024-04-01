@@ -40,7 +40,7 @@ export default async function FAQ({ limit = true }: { limit?: boolean }) {
       </h2>
       <div className="container mt-10">
         <div className="bg-white flex flex-col p-5 rounded-xl border border-[#71AE0F]">
-          <Accordion type="single" collapsible>
+          <Accordion type="multiple" collapsible>
             {faqs.slice(0, limit ? 5 : faqs.length).map(async (faq) => (
               <AccordionItem
                 value={faq.slug}
