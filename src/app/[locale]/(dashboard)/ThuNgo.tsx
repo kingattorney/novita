@@ -5,7 +5,9 @@ const reader = createReader(process.cwd(), keystaticConfig);
 
 export default async function ThuNgo() {
   const homepage = await reader.singletons.homepage.read();
-
+  if (!homepage) {
+    return <div>Not found</div>;
+  }
   return (
     <div className="container pb-20 gap-5 flex-col flex justify-center items-center">
       <h2 className="text-4xl  font-medium text-center font-itim text-[#3FA514]">
