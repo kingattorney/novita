@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import type { Metadata } from "next";
 import { Inter as FontSans, Itim } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 
 const fontSans = FontSans({
   subsets: ["latin"],
