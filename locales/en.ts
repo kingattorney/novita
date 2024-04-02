@@ -1,6 +1,6 @@
 export default {
   product_info: "Product information",
-  faq: "FAQ",
+  faq: "Frequently asked questions",
   view_more: "View more",
   open_letter: "Open letter",
   register_button: 'Register to use "Gasifier"',
