@@ -6,6 +6,9 @@ const I18nMiddleware = createI18nMiddleware({
   locales: ["en", "vi", "zh"],
   defaultLocale: "vi",
   urlMappingStrategy: "rewrite",
+  resolveLocaleFromRequest: (request) => {
+    return "vi";
+  },
 });
 
 export function middleware(request: NextRequest) {
