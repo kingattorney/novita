@@ -1,7 +1,7 @@
 import { getCurrentLocale, getI18n } from "../../../../locales/server";
 
 function fetchData(locale: "vi" | "en" | "zh") {
-  return fetch("http://45.77.170.65:1337/api/thungo?locale=" + locale).then(
+  return fetch("http://45.77.170.65:1337/api/thu-ngo?locale=" + locale).then(
     (res) => res.json()
   );
 }
