@@ -8,4 +8,9 @@ export default {
   contact_address: "Địa chỉ",
   contact_phone: "Điện thoại",
   contact_email: "Email",
+
+  hero: {
+    slogan: "Dự án Cù Lao An Bình Chứng Ngộ",
+    subslogan: '- Triển khai sản phẩm "Lò không khói của Tiến sỹ Paul" -',
+  },
 } as const;

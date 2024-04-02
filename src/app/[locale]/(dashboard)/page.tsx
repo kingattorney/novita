@@ -1,8 +1,10 @@
+import { getI18n } from "../../../../locales/server";
 import FAQ from "./faq/FAQ";
 import Hero from "./Hero";
 import ThuNgo from "./ThuNgo";
 
 export default async function HomePage() {
+  const t = await getI18n();
   return (
     <main>
       <div
@@ -15,10 +17,10 @@ export default async function HomePage() {
           <img src="/logo2.svg" className="mx-auto mb-5" alt="" />
         </picture>
         <h1 className="text-4xl font-medium text-center font-itim text-white">
-          Dự án Cù Lao An Bình Chứng Ngộ
+          {t("hero.slogan")}
         </h1>
         <h2 className="text-2xl mt-3 font-medium text-center font-itim text-white">
-          - Triển khai sản phẩm &quot;Lò không khói của Tiến sỹ Paul&quot; -
+          {t("hero.subslogan")}
         </h2>
       </div>
       <Hero />

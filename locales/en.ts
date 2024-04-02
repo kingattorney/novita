@@ -8,4 +8,9 @@ export default {
   contact_address: "Address",
   contact_phone: "Phone",
   contact_email: "Email",
+
+  hero: {
+    slogan: "An Binh Island Enlightentment Project",
+    subslogan: "- Deploying “Dr Paul’s The Gasifier” product -",
+  },
 } as const;

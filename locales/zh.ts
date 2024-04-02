@@ -8,4 +8,8 @@ export default {
   contact_address: "地址",
   contact_phone: "电话",
   contact_email: "电子邮件",
+  hero: {
+    slogan: "安平岛启蒙项目",
+    subslogan: "- 部署“保罗博士的炉”产品 -",
+  },
 } as const;
