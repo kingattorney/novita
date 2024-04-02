@@ -19,7 +19,7 @@ function fetchFAQ(locale: "vi" | "en" | "zh") {
 export default async function FAQ({ limit = true }: { limit?: boolean }) {
   const t = await getI18n();
   const locale = getCurrentLocale();
-  const { data: faqs } = await fetchFAQ(locale);
+  const { data: faqs } = await fetchFAQ("vi");
   return (
     <div
       style={{

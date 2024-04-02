@@ -9,7 +9,7 @@ function fetchData(locale: "vi" | "en" | "zh") {
 export default async function ThuNgo() {
   const t = await getI18n();
   const locale = getCurrentLocale();
-  const { data } = await fetchData(locale);
+  const { data } = await fetchData("vi");
   if (!data?.attributes?.content) return null;
   return (
     <div className="container pb-20 gap-5 flex-col flex justify-center items-center">
