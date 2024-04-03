@@ -11,9 +11,15 @@ import { Metadata } from "next";
 import { Intro, LINKS } from "./data";
 import { getCurrentLocale, getI18n } from "../../../../../locales/server";
 
-export const metadata: Metadata = {
-  title: "Thư viện lưu trữ hình ảnh và video thực nghiệm",
-};
+
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getI18n();
+  return {
+    title: t("gallery"),
+  };
+}
+
 
 export default async function Page() {
   const locale = await getCurrentLocale();
