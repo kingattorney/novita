@@ -41,7 +41,7 @@ export default async function FAQ({ limit = true }: { limit?: boolean }) {
               .map(async (faq: any, idx: any) => (
                 <AccordionItem value={faq.id} key={faq.id}>
                   <AccordionTrigger className="text-left faq-button py-7">
-                    {locale != "vi" && idx + 1}. {faq.attributes.question}
+                    {locale != "vi" && `${idx + 1}.`} {faq.attributes.question}
                   </AccordionTrigger>
                   <AccordionContent>
                     <div
