@@ -13,4 +13,5 @@ export default {
     slogan: "安平岛启蒙项目",
     subslogan: "- 部署“保罗博士的炉”产品 -",
   },
+  gallery: "The experimental images and videos library",
 } as const;

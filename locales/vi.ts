@@ -1,4 +1,5 @@
 export default {
+  home: "Trang chủ",
   product_info: "Thông tin sản phẩm",
   faq: "Câu hỏi thường gặp",
   view_more: "Xem thêm",
@@ -14,4 +15,5 @@ export default {
     slogan: "Dự án Cù Lao An Bình Chứng Ngộ",
     subslogan: '- Triển khai sản phẩm "Lò không khói của Tiến sỹ Paul" -',
   },
+  gallery: "Thư viện lưu trữ hình ảnh và video thực nghiệm",
 } as const;

@@ -32,9 +32,7 @@ export default function Hero() {
           size="lg"
           className="bg-[#71AE0F] text-lg md:text-xl font-itim whitespace-normal text-center h-auto py-4 hover:bg-[#3FA514]"
         >
-          <Link href="/gallery">
-            Thư viện lưu trữ hình ảnh và video thực nghiệm
-          </Link>
+          <Link href="/gallery">{t("gallery")}</Link>
         </Button>
       </div>
     </div>

@@ -1,4 +1,5 @@
 export default {
+  home: "Home",
   product_info: "Product information",
   faq: "Frequently asked questions",
   view_more: "View more",
@@ -14,4 +15,5 @@ export default {
     slogan: "An Binh Island Enlightentment Project",
     subslogan: "- Deploying “Dr Paul’s The Gasifier” product -",
   },
+  gallery: "The experimental images and videos library",
 } as const;

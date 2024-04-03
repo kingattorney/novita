@@ -26,7 +26,7 @@ export default function LocaleSwitcher() {
         <SelectContent>
           <SelectItem value="vi">Tiếng Việt</SelectItem>
           <SelectItem value="en">English</SelectItem>
-          <SelectItem value="zh">中文</SelectItem>
+          {/* <SelectItem value="zh">中文</SelectItem> */}
         </SelectContent>
       </Select>
     </div>
