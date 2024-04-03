@@ -5,7 +5,8 @@ export default {
   open_letter: "致信",
   register_button: "注册使用“无烟炉”",
   contact_info: "联系信息",
-  contact_address: "地址",
+  contact_address:
+    "地址: tầng 4, Tòa nhà Lam Giang, 167-173 Trần Hưng Đạo, Phường Cô Giang, Quận 1, Tp.Hồ Chí Minh",
   contact_phone: "电话",
   contact_email: "电子邮件",
   hero: {

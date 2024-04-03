@@ -39,18 +39,9 @@ export default async function Layout({
             {t("contact_info")}
           </p>
           <ul className="text-white font-itim text-lg mt-4 text-center">
-            <li>
-              <b> {t("contact_address")}: </b>
-              tầng 4, Tòa nhà Lam Giang, 167-173 Trần Hưng Đạo, Phường Cô Giang,
-              Quận 1, Tp.Hồ Chí Minh
-            </li>
-            <li>
-              <b> {t("contact_phone")}: </b> 0963 718 946
-            </li>
-            <li>
-              <b>{t("contact_email")}: </b>
-              Info@novitagroup.vn
-            </li>
+            <li>{t("contact_address")}</li>
+            <li>{t("contact_phone")}: 0963 718 946</li>
+            <li>{t("contact_email")}: Info@novitagroup.vn</li>
           </ul>
         </div>
         <div

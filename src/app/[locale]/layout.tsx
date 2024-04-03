@@ -1,10 +1,15 @@
 import { cn } from "@/lib/utils";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
-import type { Metadata } from "next";
+import type { Metadata, ResolvingMetadata } from "next";
 import { Inter, Itim } from "next/font/google";
 import "../globals.css";
 import { I18nProviderClient } from "../../../locales/client";
+import { getI18n } from "../../../locales/server";
 
+type Props = {
+  params: { locale: string };
+  searchParams: { [key: string]: string | string[] | undefined };
+};
 const fontInter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -15,10 +20,16 @@ const fontItim = Itim({
   weight: ["400"],
 });
 
-export const metadata: Metadata = {
-  title: "Dự án Cù Lao An Bình Chứng Ngộ",
-  description: 'Triển khai sản phẩm "Lò không khói của Tiến sỹ Paul"',
-};
+export async function generateMetadata(
+  { params, searchParams }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const t = await getI18n();
+  return {
+    title: t("hero.slogan"),
+    description: t("hero.subslogan"),
+  };
+}
 
 export default function RootLayout({
   children,

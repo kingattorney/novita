@@ -5,7 +5,8 @@ export default {
   open_letter: "Thư ngỏ",
   register_button: 'Đăng ký tham gia sử dụng "Lò không khói"',
   contact_info: "Thông tin liên hệ",
-  contact_address: "Địa chỉ",
+  contact_address:
+    "Địa chỉ: tầng 4, Tòa nhà Lam Giang, 167-173 Trần Hưng Đạo, Phường Cô Giang, Quận 1, Tp.Hồ Chí Minh",
   contact_phone: "Điện thoại",
   contact_email: "Email",
 

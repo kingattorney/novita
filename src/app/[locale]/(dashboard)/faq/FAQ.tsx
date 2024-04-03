@@ -18,6 +18,7 @@ function fetchFAQ(locale: "vi" | "en" | "zh") {
 
 export default async function FAQ({ limit = true }: { limit?: boolean }) {
   const t = await getI18n();
+
   const locale = getCurrentLocale();
   const { data: faqs } = await fetchFAQ(locale);
   return (
@@ -35,21 +36,23 @@ export default async function FAQ({ limit = true }: { limit?: boolean }) {
       <div className="container mt-10">
         <div className="bg-white flex flex-col p-5 rounded-xl border border-[#71AE0F]">
           <Accordion type="multiple">
-            {faqs.slice(0, limit ? 5 : faqs.length).map(async (faq: any) => (
-              <AccordionItem value={faq.id} key={faq.id}>
-                <AccordionTrigger className="text-left faq-button py-7">
-                  {faq.attributes.question}
-                </AccordionTrigger>
-                <AccordionContent>
-                  <div
-                    dangerouslySetInnerHTML={{
-                      __html: faq?.attributes?.answer,
-                    }}
-                    className="[&>p]:font-inter!"
-                  ></div>
-                </AccordionContent>
-              </AccordionItem>
-            ))}
+            {faqs
+              .slice(0, limit ? 5 : faqs.length)
+              .map(async (faq: any, idx: any) => (
+                <AccordionItem value={faq.id} key={faq.id}>
+                  <AccordionTrigger className="text-left faq-button py-7">
+                    {locale != "vi" && idx + 1}. {faq.attributes.question}
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <div
+                      dangerouslySetInnerHTML={{
+                        __html: faq?.attributes?.answer,
+                      }}
+                      className="[&>p]:font-inter!"
+                    ></div>
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
           </Accordion>
           {limit && (
             <Button className="mt-10 mx-auto " variant="outline" asChild>
