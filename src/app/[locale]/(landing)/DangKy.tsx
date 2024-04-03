@@ -8,7 +8,7 @@ export default async function DangKy() {
     <Button
       asChild
       size="lg"
-      className="bg-[#71AE0F] text-lg md:text-xl font-itim whitespace-normal text-center h-auto py-4"
+      className="bg-[#71AE0F] text-lg md:text-xl font-itim whitespace-normal text-center h-auto py-4 hover:bg-[#3FA514]"
     >
       <Link
         href="https://forms.gle/oX4NmPLxzYMVv2Lo9"

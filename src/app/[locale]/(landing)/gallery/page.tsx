@@ -7,6 +7,11 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { ChevronRight } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:'Thư viện lưu trữ hình ảnh và video thực nghiệm'
+};
 
 export default function Page() {
   return (
@@ -21,7 +26,7 @@ export default function Page() {
           <img src="/logo2.svg" className="mx-auto mb-5" alt="" />
         </picture>
         <h1 className="text-4xl font-medium text-center font-itim text-white">
-          Thư viện lưu trữ hình ảnh và video
+          Thư viện lưu trữ hình ảnh và video thực nghiệm
         </h1>
         <h2 className="text-2xl mt-3 font-medium text-center font-itim text-white">
           - Lò Không Khói TS Paul -
@@ -35,7 +40,9 @@ export default function Page() {
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbPage>Thư viện</BreadcrumbPage>
+              <BreadcrumbPage>
+                Thư viện lưu trữ hình ảnh và video thực nghiệm
+              </BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>

@@ -22,11 +22,7 @@ export default async function Layout({
                 <img src="logo.svg" alt="" />
               </picture>
             </Link>
-            <div className="flex-1">
-              <Link href="/gallery" className="hover:text-[#75AD1A] text-base">
-                Thư viện
-              </Link>
-            </div>
+
             <LocaleSwitcher />
           </div>
 
