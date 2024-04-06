@@ -5,7 +5,7 @@ import { NextRequest } from "next/server";
 const I18nMiddleware = createI18nMiddleware({
   locales: ["en", "vi", "zh"],
   defaultLocale: "vi",
-  urlMappingStrategy: "rewrite",
+  urlMappingStrategy: "rewriteDefault",
   resolveLocaleFromRequest: (request) => {
     return "vi";
   },
