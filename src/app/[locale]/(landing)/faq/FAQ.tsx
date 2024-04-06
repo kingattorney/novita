@@ -48,7 +48,7 @@ export default async function FAQ({ limit = true }: { limit?: boolean }) {
                       dangerouslySetInnerHTML={{
                         __html: faq?.attributes?.answer,
                       }}
-                      className="[&>p]:font-inter!"
+                      className="[&>p]:font-inter! prose max-w-none"
                     ></div>
                   </AccordionContent>
                 </AccordionItem>
