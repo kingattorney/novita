@@ -22,6 +22,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: t("hero.slogan"),
     description: t("hero.subslogan"),
+    metadataBase: new URL("https://novitagroup.vn"),
   };
 }
 
