@@ -38,7 +38,7 @@ export const LINKS: Record<
         },
         {
           text: "Thực nghiệm ngày 27/3/2024",
-          href: "https://drive.google.com/drive/folders/1lmA4IwR8dHYu43Z0W28k0BJFmekZ0qc2?usp=sharing",
+          href: "https://drive.google.com/drive/folders/1HD4De2gFyLVU6mCoiNL_LiO9ZVuNHniq?usp=sharing",
         },
         {
           text: "Thực nghiệm tại UBND Huyện Long Hồ ngày 05.4.2024",
@@ -98,7 +98,7 @@ export const LINKS: Record<
         },
         {
           text: "Experiment on March 27, 2024",
-          href: "https://drive.google.com/drive/folders/1lmA4IwR8dHYu43Z0W28k0BJFmekZ0qc2?usp=sharing",
+          href: "https://drive.google.com/drive/folders/1HD4De2gFyLVU6mCoiNL_LiO9ZVuNHniq?usp=sharing",
         },
       ],
     },
