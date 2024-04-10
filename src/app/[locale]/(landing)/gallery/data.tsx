@@ -88,7 +88,7 @@ export const LINKS: Record<
       items: [
         {
           text: "Giáo Sư. Tiến Sĩ. Nhà Giáo Nhân Dân VÕ TÒNG XUÂN",
-          href: "https://drive.google.com/drive/folders/1N8EpruyOHD02Hp_BWjCnhEDFkrjxCFCz?usp=sharing",
+          href: "https://drive.google.com/drive/folders/1INQA5vvsWfKMtgUsVYfsCmm7NiKDcK2f",
         },
       ],
     },
@@ -177,7 +177,7 @@ export const LINKS: Record<
       items: [
         {
           text: "Professor. Doctor. People's Teacher VO TONG XUAN",
-          href: "https://drive.google.com/drive/folders/1N8EpruyOHD02Hp_BWjCnhEDFkrjxCFCz?usp=sharing",
+          href: "https://drive.google.com/drive/folders/1INQA5vvsWfKMtgUsVYfsCmm7NiKDcK2f",
         },
       ],
     },
