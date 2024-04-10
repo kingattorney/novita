@@ -100,6 +100,10 @@ export const LINKS: Record<
           text: "Experiment on March 27, 2024",
           href: "https://drive.google.com/drive/folders/1HD4De2gFyLVU6mCoiNL_LiO9ZVuNHniq?usp=sharing",
         },
+        {
+          text: "Experiment at the People's Committee of Long Ho district on April 5, 2024",
+          href: "https://drive.google.com/drive/folders/1I5Y14REgsrvO8OtXM8VSrmCVtRVS2RCk?usp=sharing",
+        },
       ],
     },
     {
