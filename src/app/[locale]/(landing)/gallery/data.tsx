@@ -9,7 +9,7 @@ export const LINKS: Record<
       text: "CLIP VÀ HÌNH ẢNH THỰC NGHIỆM",
       items: [
         {
-          text: "Thực nghiệm có Chủ tịch tỉnh Vĩnh Long tham gia",
+          text: "Thực nghiệm có Chủ tịch xã An Bình tham gia",
           href: "https://drive.google.com/drive/folders/1wF7-b0-R-DL0XtwUiJwz7zi_JdyyMmXG?usp=sharing",
         },
         {
@@ -69,7 +69,7 @@ export const LINKS: Record<
       text: "EXPERIMENTAL IMAGES AND VIDEOS",
       items: [
         {
-          text: "The experiment involved the Chairman of Vinh Long province",
+          text: "The experiment involved the Chairman of An Bình commune",
           href: "https://drive.google.com/drive/folders/1wF7-b0-R-DL0XtwUiJwz7zi_JdyyMmXG?usp=sharing",
         },
         {
