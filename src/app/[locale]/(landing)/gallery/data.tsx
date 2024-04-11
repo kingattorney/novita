@@ -87,7 +87,7 @@ export const LINKS: Record<
       text: "CÁC CHUYÊN GIA ĐỐI TÁC",
       items: [
         {
-          text: "Giáo Sư. Tiến Sĩ. Nhà Giáo Nhân Dân VÕ TÒNG XUÂN",
+          text: "Giáo Sư. Tiến Sĩ. Nhà Giáo Nhân Dân. Anh hùng Lao Động VÕ TÒNG XUÂN",
           href: "https://drive.google.com/drive/folders/1INQA5vvsWfKMtgUsVYfsCmm7NiKDcK2f",
         },
       ],
