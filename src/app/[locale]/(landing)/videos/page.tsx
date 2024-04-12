@@ -64,7 +64,6 @@ export default async function Page() {
             key={video.id}
             className="relative overflow-hidden bg-gray-100 rounded-lg"
           >
-            zz
             <a
               href={video.attributes.link}
               target="_blank"
