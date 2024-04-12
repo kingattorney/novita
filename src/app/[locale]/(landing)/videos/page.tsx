@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/breadcrumb";
 import React from "react";
 import { getI18n } from "../../../../../locales/server";
+import Image from "next/image";
 
 interface Result {
   data: {
@@ -63,19 +64,18 @@ export default async function Page() {
             key={video.id}
             className="relative overflow-hidden bg-gray-100 rounded-lg"
           >
+            zz
             <a
               href={video.attributes.link}
               target="_blank"
               rel="noreferrer"
               className="block"
             >
-              <picture>
-                <img
-                  alt=""
-                  src={`http://45.77.170.65:1337${video.attributes.image.data.attributes.url}`}
-                  className="w-full h-full object-cover"
-                />
-              </picture>
+              <Image
+                alt=""
+                src={`http://45.77.170.65:1337${video.attributes.image.data.attributes.url}`}
+                className="w-full h-full object-cover"
+              />
             </a>
           </div>
         ))}
