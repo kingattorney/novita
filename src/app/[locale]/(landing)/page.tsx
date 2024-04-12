@@ -3,6 +3,8 @@ import FAQ from "./faq/FAQ";
 import Hero from "./Hero";
 import ThuNgo from "./ThuNgo";
 
+export const revalidate = 3600;
+
 export default async function HomePage() {
   const t = await getI18n();
   return (

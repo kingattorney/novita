@@ -11,15 +11,15 @@ import { Metadata } from "next";
 import { Intro, LINKS } from "./data";
 import { getCurrentLocale, getI18n } from "../../../../../locales/server";
 
-
+export const revalidate = 3600;
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getI18n();
   return {
     title: t("gallery"),
+    metadataBase: new URL("https://novitagroup.vn"),
   };
 }
-
 
 export default async function Page() {
   const locale = await getCurrentLocale();

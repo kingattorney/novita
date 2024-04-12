@@ -9,6 +9,8 @@ import Link from "next/link";
 import DangKy from "../DangKy";
 import { getCurrentLocale, getI18n } from "../../../../../locales/server";
 
+export const revalidate = 3600;
+
 function fetchFAQ(locale: "vi" | "en" | "zh") {
   return fetch(
     "http://45.77.170.65:1337/api/faqs?pagination[pageSize]=1000&locale=" +
