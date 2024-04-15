@@ -27,21 +27,24 @@ export default function Hero() {
           <div className="py-2 text-center text-sm text-muted-foreground">
             <Link
               href="/videos"
+              target="_blank"
               className="cursor-pointer mx-1 p-2 rounded drop-shadow bg-[#3FA514] text-white"
             >
               1
             </Link>
             <Link
               href="/videos"
+              target="_blank"
               className="cursor-pointer mx-1 p-2 rounded drop-shadow bg-[#3FA514] text-white"
             >
               2
             </Link>
             <Link
               href="/videos"
+              target="_blank"
               className="cursor-pointer mx-1 p-2 rounded drop-shadow bg-[#3FA514] text-white"
             >
-              Xem thêm
+              {t("view_more")}
             </Link>
           </div>
         </div>
