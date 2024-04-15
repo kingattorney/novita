@@ -9,6 +9,7 @@ import {
 import React from "react";
 import { getI18n } from "../../../../../locales/server";
 import Image from "next/image";
+import Script from "next/script";
 
 interface Result {
   data: {
@@ -37,14 +38,7 @@ export default async function Page() {
   const data = (await fetchVIDEOS()) as Result;
   const t = await getI18n();
   return (
-    <div
-      className="py-10"
-      style={{
-        backgroundImage: "url('/qa.png')",
-        backgroundAttachment: "fixed",
-        backgroundSize: "cover",
-      }}
-    >
+    <div className="py-10">
       <div className="container">
         <Breadcrumb className="w-full">
           <BreadcrumbList>
@@ -58,7 +52,23 @@ export default async function Page() {
           </BreadcrumbList>
         </Breadcrumb>
       </div>
-      <div className="grid md:grid-cols-3 grid-cols-2 gap-5 lg:grid-cols-5 py-10 md:gap-10 container">
+      <blockquote
+        className="tiktok-embed"
+        cite="https://www.tiktok.com/@novitagroup"
+        data-unique-id="novitagroup"
+        data-embed-type="creator"
+      >
+        <section>
+          <a
+            target="_blank"
+            href="https://www.tiktok.com/@novitagroup?refer=creator_embed"
+          >
+            @novitagroup
+          </a>
+        </section>
+      </blockquote>
+      <Script async src="https://www.tiktok.com/embed.js"></Script>
+      {/* <div className="grid md:grid-cols-3 grid-cols-2 gap-5 lg:grid-cols-5 py-10 md:gap-10 container">
         {data.data.map((video) => (
           <div
             key={video.id}
@@ -78,7 +88,7 @@ export default async function Page() {
             </a>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }

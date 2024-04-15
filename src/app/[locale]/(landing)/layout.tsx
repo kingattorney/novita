@@ -13,7 +13,7 @@ export default async function Layout({
   const t = await getI18n();
   return (
     <div>
-      <header>
+      <header className="border-b">
         <div className="h-8 bg-[#75AD1A]"></div>
         <div className="container  py-4 flex flex-col md:flex-row gap-5 items-start  justify-between text-[#42A761] text-xl font-bold md:items-center">
           <div className="flex gap-10 items-center flex-1 w-full justify-between ">
