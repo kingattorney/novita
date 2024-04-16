@@ -13,7 +13,7 @@ export default {
 
   hero: {
     slogan: "An Binh Island Enlightentment Project",
-    subslogan: "- Deploying “Dr Paul’s The Gasifier” product -",
+    subslogan: "- Deploying “Novita’s The Gasifier” product -",
   },
   gallery: "The experimental images and videos library",
 } as const;

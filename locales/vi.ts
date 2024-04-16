@@ -13,7 +13,7 @@ export default {
 
   hero: {
     slogan: "Dự án Cù Lao An Bình Chứng Ngộ",
-    subslogan: '- Triển khai sản phẩm "Lò không khói của Tiến sỹ Paul" -',
+    subslogan: '- Triển khai sản phẩm "Lò không khói Novita" -',
   },
   gallery: "Thư viện lưu trữ hình ảnh và video thực nghiệm",
 } as const;
