@@ -19,7 +19,7 @@ export default async function Layout({
           <div className="flex gap-10 items-center flex-1 w-full justify-between ">
             <Link href="/">
               <picture>
-                <img src="logo.svg" alt="" />
+                <img src="/logo.svg" alt="" />
               </picture>
             </Link>
 
