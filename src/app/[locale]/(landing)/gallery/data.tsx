@@ -1,5 +1,62 @@
 import React from "react";
 
+export const dataByLocale = {
+  vi: [
+    {
+      id: 1,
+      title: "Clip và hình ảnh về tiến sĩ Paul Andre Olivier",
+      url: "https://drive.google.com/drive/folders/1-dNLn9wZEYcjPwCZmIEANDMhUm6ZPNNe",
+    },
+    {
+      id: 2,
+      title: "Chuyên gia đối tác",
+      url: "https://drive.google.com/drive/folders/1-KwBXV98T9W5RnLyehha8O4OO1rDK-bH",
+    },
+    {
+      id: 3,
+      title: "Clip và hình ảnh thực nghiệm Lò Không Khói",
+      url: "https://drive.google.com/drive/folders/147M-i_R6LWadKM3qa_YYTdDcYHkKM_Jq",
+    },
+    {
+      id: 4,
+      title: "Clip và hình ảnh Lò Không Khói",
+      url: "https://drive.google.com/drive/folders/1rqDzlfRGmdxMUwg6uPbb9UlHAmRmJWtb",
+    },
+    {
+      id: 5,
+      title: "Lợi ích Lò Không Khói",
+      url: "https://drive.google.com/drive/folders/18poxp_7BMvJKAoc0PVoSAeh-dVTLNe8G",
+    },
+  ],
+  en: [
+    {
+      id: 1,
+      title: "Clips and images of Dr. Paul Andre Olivier",
+      url: "https://drive.google.com/drive/folders/1-dNLn9wZEYcjPwCZmIEANDMhUm6ZPNNe",
+    },
+    {
+      id: 2,
+      title: "Partner Experts",
+      url: "https://drive.google.com/drive/folders/1-KwBXV98T9W5RnLyehha8O4OO1rDK-bH",
+    },
+    {
+      id: 3,
+      title: "Clips and images of 'Dr Paul's The Gasifier' experiments",
+      url: "https://drive.google.com/drive/folders/147M-i_R6LWadKM3qa_YYTdDcYHkKM_Jq",
+    },
+    {
+      id: 4,
+      title: "Clips and images of 'Dr Paul's The Gasifier'",
+      url: "https://drive.google.com/drive/folders/1rqDzlfRGmdxMUwg6uPbb9UlHAmRmJWtb",
+    },
+    {
+      id: 5,
+      title: "The benefits of 'Dr Paul's The Gasifier'",
+      url: "https://drive.google.com/drive/folders/18poxp_7BMvJKAoc0PVoSAeh-dVTLNe8G",
+    },
+  ],
+};
+
 export function Intro({ locale }: { locale: string }) {
   if (locale == "vi")
     return (
