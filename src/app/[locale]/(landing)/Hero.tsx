@@ -17,7 +17,7 @@ export default function Hero() {
       <div className="py-10 flex flex-col  justify-center  md:flex-row gap-5 items-center">
         <picture className="w-full">
           <img
-            src={`heroimage_${locale}.png`}
+            src={`heroimage_${locale}.jpg`}
             className="flex-1 w-full"
             alt=""
           />
