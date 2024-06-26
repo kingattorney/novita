@@ -13,7 +13,7 @@ export const revalidate = 3600;
 
 function fetchFAQ(locale: "vi" | "en" | "zh") {
   return fetch(
-    "http://45.77.170.65:1337/api/faqs?pagination[pageSize]=1000&locale=" +
+    "http://cms.novitagroup.vn/api/faqs?pagination[pageSize]=1000&locale=" +
       locale
   ).then((res) => res.json());
 }
