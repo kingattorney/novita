@@ -49,7 +49,10 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center">
+      <picture className="w-full">
+        <img src={`leaf-2.jpg`} className="flex-1 w-full" alt="" />
+      </picture>
+      <div className="flex mt-10 justify-center">
         <Button
           asChild
           size="lg"
