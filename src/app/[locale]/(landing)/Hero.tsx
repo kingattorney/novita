@@ -49,9 +49,11 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <picture className="w-full">
-        <img src={`leaf-2.jpg`} className="flex-1 w-full" alt="" />
-      </picture>
+      <div className="max-w-screen-md mx-auto">
+        <picture className="w-full">
+          <img src={`leaf-2.jpg`} className="flex-1 w-full" alt="" />
+        </picture>
+      </div>
       <div className="flex mt-10 justify-center">
         <Button
           asChild
