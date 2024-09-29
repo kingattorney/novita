@@ -5,6 +5,7 @@ import { Inter, Itim } from "next/font/google";
 import { I18nProviderClient } from "../../../locales/client";
 import { getI18n } from "../../../locales/server";
 import "../globals.css";
+import Script from "next/script";
 
 const fontInter = Inter({
   subsets: ["latin"],
@@ -45,6 +46,11 @@ export default function RootLayout({
         <GoogleTagManager gtmId="GTM-5R8KVQ2N" />
         <I18nProviderClient locale={locale}>{children}</I18nProviderClient>
         <GoogleAnalytics gaId="G-R0LWKVRG10" />
+        <Script
+          defer
+          src="https://umami-iw8g00o0sss88ss8gkwwkk4k.kaapp.net/script.js"
+          data-website-id="0ef06839-e585-4aba-914d-62f27878dd23"
+        ></Script>
       </body>
     </html>
   );
